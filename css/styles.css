@@ -1,0 +1,33 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin top by header height */
+  margin-top: 65px;
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+  background-color: #DADADA;
+  
+}
+
+.device{
+	height: 660px;
+}
+
+ul {list-style:none; margin:0; padding:0;}
+li {float:left; display:block; margin:0; padding:0 10px; border-left:#ccc solid 1px;} 
+li:first-child {border-left:0}
+a {color:#64717F;}
+.settings{
+	height: 150px;
+}
+.battery{
+	height: 225px;
+}
+.storage{
+	height: 225px;
+}
+.apps{
+	height: 275px;
+}

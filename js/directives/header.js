@@ -1,10 +1,12 @@
-app.directive('supportViewHeader', function(){
-return{
-	restrict: 'EC',
-	templateURL: "../../views/shared/header.html",
-	link:function ($scope, $ele, $attr) {
-		
-	}
-}
+'use strict';
 
-})
+app.directive("supportViewHeader", function(){
+	return {
+		link: function(scope, ele, attrs){
+
+		},
+		restrict:'C',
+		replace:false,
+		templateUrl: 'views/shared/header.html'
+	}
+});
