@@ -2,7 +2,6 @@
 
 app.factory('batteryService', ['$resource',
   function ($resource) {
-//alert("Hi")
       var url = "http://coriolis-provisioning2-dev.us-east-1.elasticbeanstalk.com/Coriolis/api/v1/supportview/device/battery?realm=realm100";
       return $resource(url, {},{
           'get': {

@@ -1,6 +1,6 @@
 'use strict';
 
-var app = angular.module('viewsSupport', ['ui.bootstrap', 'ui.router']);
+var app = angular.module('viewsSupport', ['ui.bootstrap', 'ui.router', 'ngResource']);
 app.config(function(){
 
 
