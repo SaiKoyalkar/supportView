@@ -6,6 +6,8 @@ deviceService.get(function(response){
 $scope.device=response;
 }, function(error){
 
+	$scope.device=error;
+
 })
 
 });

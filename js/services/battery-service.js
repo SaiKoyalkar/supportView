@@ -8,7 +8,7 @@ app.factory('batteryService', ['$resource',
               method: 'GET',
               withCredentials: true,
               transformResponse: function (data) {
-                 return angular.fromJson(data).d;
+                 return angular.fromJson(data);
               }
           }
       });

@@ -1,0 +1,57 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'http-server',
+1 verbose cli   '-g' ]
+2 info using npm@2.14.20
+3 info using node@v4.4.0
+4 verbose install initial load of /usr/local/lib/package.json
+5 verbose readDependencies loading dependencies from /usr/local/lib/package.json
+6 silly cache add args [ 'http-server', null ]
+7 verbose cache add spec http-server
+8 silly cache add parsed spec Result {
+8 silly cache add   raw: 'http-server',
+8 silly cache add   scope: null,
+8 silly cache add   name: 'http-server',
+8 silly cache add   rawSpec: '',
+8 silly cache add   spec: 'latest',
+8 silly cache add   type: 'tag' }
+9 silly addNamed http-server@latest
+10 verbose addNamed "latest" is being treated as a dist-tag for http-server
+11 info addNameTag [ 'http-server', 'latest' ]
+12 silly mapToRegistry name http-server
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npmjs.org/
+15 silly mapToRegistry uri https://registry.npmjs.org/http-server
+16 verbose addNameTag registry:https://registry.npmjs.org/http-server not in flight; fetching
+17 verbose request uri https://registry.npmjs.org/http-server
+18 verbose request no auth needed
+19 info attempt registry request try #1 at 9:47:52 AM
+20 verbose request id cbfbc29f889835c2
+21 http request GET https://registry.npmjs.org/http-server
+22 info retry will retry, error on last attempt: Error: read ECONNRESET
+23 info attempt registry request try #2 at 9:48:02 AM
+24 http request GET https://registry.npmjs.org/http-server
+25 info retry will retry, error on last attempt: Error: read ECONNRESET
+26 info attempt registry request try #3 at 9:49:03 AM
+27 http request GET https://registry.npmjs.org/http-server
+28 verbose stack Error: read ECONNRESET
+28 verbose stack     at exports._errnoException (util.js:870:11)
+28 verbose stack     at TLSWrap.onread (net.js:550:26)
+29 verbose cwd /Users/saibaba/Documents/SupView
+30 error Darwin 15.4.0
+31 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "http-server" "-g"
+32 error node v4.4.0
+33 error npm  v2.14.20
+34 error code ECONNRESET
+35 error errno ECONNRESET
+36 error syscall read
+37 error network read ECONNRESET
+37 error network This is most likely not a problem with npm itself
+37 error network and is related to network connectivity.
+37 error network In most cases you are behind a proxy or have bad network settings.
+37 error network
+37 error network If you are behind a proxy, please make sure that the
+37 error network 'proxy' config is set properly.  See: 'npm help config'
+38 verbose exit [ 1, true ]
