@@ -1,4 +1,4 @@
-<section class="col-md-6">
+<section class="col-md-6" ng-controller="deviceCtrl">
 
 <div class="panel panel-default panel-primary device" id="device">
   <div class="panel-heading">
@@ -12,6 +12,7 @@
     <li><a href="#">App Version: Marshmellow</a></li>
     </ul>
     <hr/>
+    {{device}}
     <img class="PhoneScreen" src="images/PhoneScreen.png">
   </div>
 </div>
@@ -22,7 +23,7 @@
 
 
 <!-- Settings Panel -->
-<section class="row">
+<section class="row" ng-controller="settingsCtrl">
 <div class="col-md-12">
 <div class="panel panel-default panel-primary settings" id="settings">
   <div class="panel-heading">
@@ -39,7 +40,7 @@
 
 <section class="row">
 <!-- Battery History panel -->
-<div class="col-md-6">
+<div class="col-md-6" ng-controller="batteryCtrl">
 <div class="panel panel-default panel-primary battery" id="battery">
   <div class="panel-heading">
     <h3 class="panel-title">Battery History</h3>
@@ -52,7 +53,7 @@
 </div>
 <!-- Storage panel -->
 
-<div class="col-md-6">
+<div class="col-md-6" ng-controller="storageCtrl">
 <div class="panel panel-default panel-primary storage" id="storage">
   <div class="panel-heading">
     <h3 class="panel-title">Storage</h3>
@@ -65,7 +66,7 @@
 </section>
 
 
-<section class="row">
+<section class="row" ng-controller="appsCtrl">
 <!-- Apps panel -->
 <div class="col-md-12">
 <div class="panel panel-default panel-primary apps" id="apps">
