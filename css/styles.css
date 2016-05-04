@@ -6,7 +6,7 @@ body {
   /* Margin top by header height */
   margin-top: 65px;
   /* Margin bottom by footer height */
-  margin-bottom: 60px;
+  margin-bottom: 50px;
   background-color: #DADADA;
   
 }
@@ -16,7 +16,7 @@ body {
 }
 
 ul {list-style:none; margin:0; padding:0;}
-li {float:left; display:block; margin:0; padding:0 10px; border-left:#ccc solid 1px;} 
+li {float:left; display:block; margin:0; padding:0 5px; border-left:#ccc solid 1px;} 
 li:first-child {border-left:0}
 a {color:#64717F;}
 .settings{
@@ -29,5 +29,6 @@ a {color:#64717F;}
 	height: 225px;
 }
 .apps{
-	height: 275px;
+	height: 245px;
 }
+.container-fluid{background-color: #364659 !important; color: #fff;}
