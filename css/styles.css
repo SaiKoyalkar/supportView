@@ -4,7 +4,7 @@ html {
 }
 body {
   /* Margin top by header height */
-  margin-top: 65px;
+  margin-top: 50px;
   /* Margin bottom by footer height */
   margin-bottom: 50px;
   background-color: #DADADA;
@@ -32,3 +32,19 @@ a {color:#64717F;}
 	height: 245px;
 }
 .container-fluid{background-color: #364659 !important; color: #fff;}
+.connected{color: inherit;
+    float: right;
+    font-size: 13px;
+    margin-bottom: 0;
+    margin-top: -12px;}
+    .disconnected{color: inherit;
+    float: right;
+    font-size: 13px;
+    margin-bottom: 0;
+    margin-top: -15px;}
+    .logout{color: inherit;
+    float: right;
+    font-size: 13px;
+    margin-bottom: 0;
+    margin-top: -28px;}
+    .settingPanel1{}
