@@ -107,7 +107,7 @@
     <img src="images/Brightness Settings.png" />
   </div>
   <div class="col-md-9">
-    Brightness: <label class="pull-right"> Auto </label> <input type="radio" class="pull-right"> 
+    Brightness: <label class="pull-right"> Auto </label> <input type="checkbox" class="pull-right"> 
     <div><input type="range" /></div>
   </div>
 </div>
@@ -118,28 +118,43 @@
 
 <section class="row">
 <!-- Battery History panel -->
-<div class="col-md-6" ng-controller="batteryCtrl">
+<div class="col-md-8" ng-controller="batteryCtrl">
 <div class="panel panel-default panel-primary battery" id="battery">
   <div class="panel-heading">
     <h3 class="panel-title">Battery History</h3>
   </div>
   <div class="panel-body">
-    <div>Samgsung Galaxy s6</div>
-    {{battery}}
+    <div class="col-md-8"><img src="images/battery-graph.png" class="img-responsive"></div>
+    <div class="col-md-4">
+      <input type="checkbox" checked="checked" class="pull-left" /><label>Customer Battery life</label>
+      <input type="checkbox" class="pull-left" /><label>Average Consumer Battery Life</label>
+<!--       <div class="">
+        
+        Helpful Tips
+        <ul>
+          <li>Do not leave your device in the car</li>
+          <li>Turn off WIFI, Bluetooth, GPS</li>
+
+        </ul>
+      </div>
+ -->
+    </div>
   </div>
 </div>
 
 </div>
 <!-- Storage panel -->
 
-<div class="col-md-6" ng-controller="storageCtrl">
+<div class="col-md-4" ng-controller="storageCtrl">
 <div class="panel panel-default panel-primary storage" id="storage">
   <div class="panel-heading">
     <h3 class="panel-title">Storage</h3>
   </div>
   <div class="panel-body">
-    <div>Samgsung Galaxy s6</div>
-    {{storage}}
+    <div class="m-auto">
+    <img src="images/storage-graph.png" class="img-responsive" />  
+    </div>
+    
   </div>
 </div>
 </div>
@@ -154,8 +169,9 @@
     <h3 class="panel-title">Apps</h3>
   </div>
   <div class="panel-body">
-    <div>Samgsung Galaxy s6</div>
-    {{apps}}
+    <div>
+      
+    </div>
   </div>
 </div>
 </div>
