@@ -15,7 +15,21 @@
     <li><span>App Version: Marshmellow</span></li>
     </ul>
     <hr/>
-    <img class="PhoneScreen" src="images/PhoneScreen.png">
+    <section ng-if="!connectScreen">
+    <img class="PhoneScreen" src="images/PhoneScreen.png" ng-click="connect()">
+    </section>
+    <section id="connetScreen" ng-if="connectScreen">
+    <div class="row">
+      <div class="col-md-6">
+      <img src="images/connect-phone.png" class="image-responsive">
+        
+      </div>
+       <div class="col-md-6">
+         <img src="images/connect-tools.png" class="image-responsive">
+       </div>
+
+    </div>
+    </section>
   </div>
 </div>
 

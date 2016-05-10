@@ -10,4 +10,10 @@ $scope.device=response;
 
 })
 
+$scope.connectScreen = false;
+$scope.connect = function(){
+	$scope.connectScreen = true;
+
+}
+
 });
