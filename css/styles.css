@@ -20,7 +20,7 @@ li {float:left; display:block; margin:0; padding:0 5px; border-left:#ccc solid 1
 li:first-child {border-left:0}
 a {color:#64717F;}
 .settings{
-	height: 150px;
+	height: 200px;
 }
 .battery{
 	height: 225px;
@@ -46,5 +46,19 @@ a {color:#64717F;}
     float: right;
     font-size: 13px;
     margin-bottom: 0;
-    margin-top: -28px;}
-    .settingPanel1{}
+    margin-top: -28px;
+  }
+  .settingPanel1{
+
+  }
+  .set-height{
+    height: 81.5px;
+    padding: 10px;
+  }
+.col-md-3{
+  border: none;
+}
+
+.col-border {
+    border: 1px solid #ccc;
+}
