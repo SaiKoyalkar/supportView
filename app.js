@@ -36,7 +36,7 @@ app.config(['$stateProvider', '$urlRouterProvider', function (stateProvider, url
 
         .state("index", {
           abstract : true,
-          templateUrl: 'views/home.html'
+          templateUrl: 'views/home1.html'
         })
 		.state("home", {
             parent: 'index',

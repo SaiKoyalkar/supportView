@@ -1,4 +1,5 @@
-<section class="col-md-6" ng-controller="deviceCtrl">
+<div ng-controller="homeCtrl">
+<section class="col-md-6">
 
 <div class="panel panel-default panel-primary device" id="device">
   <div class="panel-heading">
@@ -8,14 +9,15 @@
     <h3 class="connected" style="display: none;">Connected</h3>
   </div>
   <div class="panel-body">
-    <div><strong>Samgsung Galaxy s6</strong></div>
+    <div><strong>{{deviceDetails.overview.make}}</strong></div>
     <ul>
-    <li><span>SM-G920V</span></li>
-    <li><span>Andriod6.0</span></li>
-    <li><span>App Version: Marshmellow</span></li>
-    </ul>
+    <li><span>{{deviceDetails.overview.model}}</span></li>
+    <li><span>{{deviceDetails.overview.os}} {{deviceDetails.overview.osVersion}}</span></li>
+<!--     <li><span>App Version: Marshmellow</span></li>
+ -->    
+ </ul>
     <hr/>
-    {{device}}
+
     <img class="PhoneScreen" src="images/PhoneScreen.png">
   </div>
 </div>
@@ -26,13 +28,17 @@
 
 
 <!-- Settings Panel -->
-<section class="row" ng-controller="settingsCtrl">
+<section class="row">
 <div class="col-md-12">
 <div class="panel panel-default panel-primary settings" id="settings">
   <div class="panel-heading">
     <h3 class="panel-title">Settings</h3>
+        {{deviceDetails.settings}}
   </div>
   
+
+
+
   <div class="col-md-12">
   <div class="col-md-3"> 
   <img src="images/Auto Rotate.png" style="padding: 10px;" /> Auto Rotate
@@ -75,35 +81,37 @@
 
 <section class="row">
 <!-- Battery History panel -->
-<div class="col-md-6" ng-controller="batteryCtrl">
+<div class="col-md-6">
 <div class="panel panel-default panel-primary battery" id="battery">
   <div class="panel-heading">
     <h3 class="panel-title">Battery History</h3>
   </div>
   <div class="panel-body">
     <div>Samgsung Galaxy s6</div>
-    {{battery}}
+        {{deviceDetails.battery}}
+
   </div>
 </div>
 
 </div>
 <!-- Storage panel -->
 
-<div class="col-md-6" ng-controller="storageCtrl">
+<div class="col-md-6">
 <div class="panel panel-default panel-primary storage" id="storage">
   <div class="panel-heading">
     <h3 class="panel-title">Storage</h3>
   </div>
   <div class="panel-body">
     <div>Samgsung Galaxy s6</div>
-    {{storage}}
+
+    {{deviceDetails.storage}}
   </div>
 </div>
 </div>
 </section>
 
 
-<section class="row" ng-controller="appsCtrl">
+<section class="row">
 <!-- Apps panel -->
 <div class="col-md-12">
 <div class="panel panel-default panel-primary apps" id="apps">
@@ -112,10 +120,11 @@
   </div>
   <div class="panel-body">
     <div>Samgsung Galaxy s6</div>
-    {{apps}}
+    {{deviceDetails.apps}}
   </div>
 </div>
 </div>
 </section>
 
 </section>
+</div>

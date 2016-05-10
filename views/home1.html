@@ -1,0 +1,130 @@
+<div ng-controller="homeCtrl">
+<section class="col-md-6">
+
+<div class="panel panel-default panel-primary device" id="device">
+  <div class="panel-heading">
+    <h3 class="panel-title">Device</h3>
+
+    <h3 class="disconnected"><img src="images/Disconnected.png" style="margin-bottom: 2px;" /> Disconnected</h3>
+    <h3 class="connected" style="display: none;">Connected</h3>
+  </div>
+  <div class="panel-body">
+    <div><strong>{{deviceDetails.overview.make}}</strong></div>
+    <ul>
+    <li><span>{{deviceDetails.overview.model}}</span></li>
+    <li><span>{{deviceDetails.overview.os}} {{deviceDetails.overview.osVersion}}</span></li>
+<!--     <li><span>App Version: Marshmellow</span></li>
+ -->    
+ </ul>
+    <hr/>
+
+    <img class="PhoneScreen" src="images/PhoneScreen.png">
+  </div>
+</div>
+
+</section>
+
+<section class="col-md-6"> 
+
+
+<!-- Settings Panel -->
+<section class="row">
+<div class="col-md-12">
+<div class="panel panel-default panel-primary settings" id="settings">
+  <div class="panel-heading">
+    <h3 class="panel-title">Settings</h3>
+        {{deviceDetails.settings}}
+  </div>
+  
+
+
+
+  <div class="col-md-12">
+  <div class="col-md-3"> 
+  <img src="images/Auto Rotate.png" style="padding: 10px;" /> Auto Rotate
+  </div>
+  <div class="col-md-3">
+  <img src="images/GPS.png" style="padding: 10px;" /> GPS 
+  </div>
+  <div class="col-md-3"> 
+  <img src="images/Sync Data.png" style="padding: 10px;"/> Sync.Data
+  </div>
+  <div class="col-md-3"> <img src="images/Mobile Data.png" style="padding: 2px;" /> Mobile Data
+  </div>
+  </div>
+
+  <div class="col-md-12">
+  <div class="col-md-4"><img src="images/Wifi Settings.png" />
+  <label>Wifi <img src=""></label>
+
+  <div><label>View More:</label>
+  
+  <select><option>5</option></select>
+  </div>
+
+  </div>
+  <div class="col-md-4"><img src="images/Bluetooth Settings.png" />Bluetooth<div><label>Connected:</label>
+  
+  <select><option>Handsfree</option></select>
+  </div></div>
+  <div class="col-md-4"><img src="images/Brightness Settings.png" />Brightness:</div>
+  </div>
+  <div class="panel-body" style="display: none;">
+    <div>Samgsung Galaxy s6</div>
+    {{settings}}
+  </div>
+</div>
+</div>
+</section>
+
+
+
+<section class="row">
+<!-- Battery History panel -->
+<div class="col-md-6">
+<div class="panel panel-default panel-primary battery" id="battery">
+  <div class="panel-heading">
+    <h3 class="panel-title">Battery History</h3>
+  </div>
+  <div class="panel-body">
+    <div>Samgsung Galaxy s6</div>
+        {{deviceDetails.battery}}
+
+  </div>
+</div>
+
+</div>
+<!-- Storage panel -->
+
+<div class="col-md-6">
+<div class="panel panel-default panel-primary storage" id="storage">
+  <div class="panel-heading">
+    <h3 class="panel-title">Storage</h3>
+  </div>
+  <div class="panel-body">
+    <div>Samgsung Galaxy s6</div>
+
+    {{deviceDetails.storage}}
+  </div>
+</div>
+</div>
+</section>
+
+
+<section class="row">
+<!-- Apps panel -->
+<div class="col-md-12">
+<div class="panel panel-default panel-primary apps" id="apps">
+  <div class="panel-heading">
+    <h3 class="panel-title">Apps</h3>
+  </div>
+  <div class="panel-body">
+    <div>Samgsung Galaxy s6</div>
+    {{deviceDetails.apps}}
+  </div>
+</div>
+</div>
+</section>
+
+</section>
+</div>
