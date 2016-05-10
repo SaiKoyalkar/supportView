@@ -4,8 +4,8 @@
   <div class="panel-heading">
     <h3 class="panel-title">Device</h3>
 
-    <h3 class="disconnected"><img src="images/Disconnected.png" style="margin-bottom: 2px;" /> Disconnected</h3>
-    <h3 class="connected" style="display: none;">Connected</h3>
+    <h3 class="disconnected" ng-click="connect()" ng-if="!connectScreen"><img src="images/Disconnected.png" style="margin-bottom: 2px;" /> Disconnected</h3>
+    <h3 class="connected" ng-if="connectScreen">Connected</h3>
   </div>
   <div class="panel-body">
     <div><strong>Samgsung Galaxy s6</strong></div>
